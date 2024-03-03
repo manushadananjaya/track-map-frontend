@@ -41,6 +41,12 @@ const SignupScreen = ({ navigation }) => {
       <Spacer>
         <Button title="Sign Up" onPress={() => signup({ email, password })} />
       </Spacer>
+      <Spacer>
+        <Button
+          title="Already have an account? Sign in instead."
+          onPress={() => navigation.navigate('Signin')}
+        />
+      </Spacer>
     </View>
   );
 };
